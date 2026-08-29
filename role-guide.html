@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alur Kerja Role Akademi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f5;
+      color: #1e2a27;
+      margin: 0;
+      padding: 32px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    }
+    h1, h2, h3 {
+      color: #0f3e36;
+      margin-top: 0;
+    }
+    .role {
+      border: 1px solid #dfe8e3;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      background: #fafcfb;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .sme { background: #e6f5ee; color: #1d6e55; }
+    .academy { background: #eef3ff; color: #244a8a; }
+    .participant { background: #fff5e8; color: #9b5d00; }
+    .management { background: #f3edf8; color: #5d3a8d; }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    .summary table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .summary th, .summary td {
+      border: 1px solid #dfe8e3;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .summary th {
+      background: #f0f6f3;
+    }
+    .note {
+      background: #f7f9f9;
+      border-left: 4px solid #0f3e36;
+      padding: 12px 14px;
+      margin-top: 18px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Alur Kerja dan Akses Per Role</h1>
+    <p>Dokumen ini menjelaskan apa yang bisa dilakukan oleh masing-masing peran di sistem Akademi.</p>
+
+    <div class="role">
+      <div class="badge sme">SME / Fasilitator</div>
+      <h2>Tujuan</h2>
+      <p>SME bertanggung jawab untuk membuat dan menyiapkan modul pembelajaran.</p>
+
+      <h3>Alur kerja</h3>
+      <ul>
+        <li>Login ke aplikasi</li>
+        <li>Pilih <strong>Modul Saya</strong></li>
+        <li>Klik <strong>Buat Modul Baru</strong></li>
+        <li>Pilih salah satu template modul</li>
+        <li>Isi wizard 10 langkah:
+          <ul>
+            <li>Module Information</li>
+            <li>Learning Objective</li>
+            <li>Pre-Test</li>
+            <li>Learning Content</li>
+            <li>Learning Activity</li>
+            <li>Assignment</li>
+            <li>Post-Test</li>
+            <li>NPS</li>
+            <li>Preview as Participant</li>
+            <li>Check My Readiness</li>
+          </ul>
+        </li>
+        <li>Pastikan semua isian tersimpan otomatis</li>
+        <li>Submit modul untuk review ke Academy</li>
+      </ul>
+
+      <h3>Apa yang bisa dilakukan</h3>
+      <ul>
+        <li>Membuat modul baru</li>
+        <li>Menyusun tujuan pembelajaran</li>
+        <li>Membuat soal pre-test dan post-test</li>
+        <li>Menulis materi pembelajaran</li>
+        <li>Menambahkan aktivitas belajar</li>
+        <li>Membuat tugas/assignment</li>
+        <li>Mengatur NPS</li>
+        <li>Melihat readiness score</li>
+        <li>Menyerahkan modul untuk review</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="badge academy">Academy Admin</div>
+      <h2>Tujuan</h2>
+      <p>Academy memastikan modul sudah siap, berkualitas, dan sesuai dengan standar mutu.</p>
+
+      <h3>Alur kerja</h3>
+      <ul>
+        <li>Login ke aplikasi</li>
+        <li>Masuk ke <strong>Review Queue</strong></li>
+        <li>Pilih modul yang dikirim SME</li>
+        <li>Baca readiness report dan temuan otomatis</li>
+        <li>Cek bagian modul yang perlu revisi</li>
+        <li>Berikan komentar atau catatan</li>
+        <li>Putuskan:
+          <ul>
+            <li>Request Revision</li>
+            <li>Approve</li>
+            <li>Approve &amp; Ready to Deliver</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Apa yang bisa dilakukan</h3>
+      <ul>
+        <li>Review modul dari SME</li>
+        <li>Memeriksa kelengkapan modul</li>
+        <li>Mengecek kualitas assessment</li>
+        <li>Memberi catatan review</li>
+        <li>Mengapprove modul</li>
+        <li>Meminta revisi jika belum siap</li>
+        <li>Menginput daftar peserta</li>
+        <li>Menentukan peserta masuk kelas</li>
+        <li>Mendistribusikan modul pembelajaran ke peserta</li>
+        <li>Mengelola enrollment kelas dan akses pembelajaran</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="badge participant">Peserta</div>
+      <h2>Tujuan</h2>
+      <p>Peserta mengikuti pembelajaran, mengerjakan penilaian, dan melihat hasil belajarnya.</p>
+
+      <h3>Alur kerja</h3>
+      <ul>
+        <li>Login ke aplikasi</li>
+        <li>Melakukan absensi</li>
+        <li>Mengerjakan pre-test</li>
+        <li>Membaca Learning Objective</li>
+        <li>Mempelajari content per section</li>
+        <li>Menandai progress tiap materi</li>
+        <li>Mengumpulkan hasil kerja</li>
+        <li>Mengerjakan post-test</li>
+        <li>Memberikan NPS dan feedback</li>
+        <li>Melihat hasil belajar dan sertifikat</li>
+      </ul>
+
+      <h3>Apa yang bisa dilakukan</h3>
+      <ul>
+        <li>Ikut kelas</li>
+        <li>Mengerjakan assessment</li>
+        <li>Membaca materi pembelajaran</li>
+        <li>Menyerahkan tugas</li>
+        <li>Melihat progres belajar</li>
+        <li>Mengetahui hasil pre/post-test</li>
+        <li>Melihat sertifikat</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="badge management">Management</div>
+      <h2>Tujuan</h2>
+      <p>Management memantau efektivitas program dan performa pembelajaran secara keseluruhan.</p>
+
+      <h3>Alur kerja</h3>
+      <ul>
+        <li>Login ke aplikasi</li>
+        <li>Buka <strong>Executive Dashboard</strong></li>
+        <li>Melihat report dan indikator performa</li>
+        <li>Mengecek readiness fasilitator</li>
+        <li>Menganalisa learning performance</li>
+        <li>Mengawasi status kelas dan peserta</li>
+      </ul>
+
+      <h3>Apa yang bisa dilakukan</h3>
+      <ul>
+        <li>Melihat dashboard eksekutif</li>
+        <li>Menilai kesiapan fasilitator</li>
+        <li>Memonitor hasil belajar</li>
+        <li>Melihat feedback dan NPS</li>
+        <li>Memantau status kelas</li>
+        <li>Membaca laporan dan analytics</li>
+      </ul>
+    </div>
+
+    <div class="summary">
+      <h2>Ringkasan Akses</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Fokus Utama</th>
+            <th>Hak Akses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SME</td>
+            <td>Membuat modul</td>
+            <td>Editable modul miliknya, baca terbatas pada modul lain</td>
+          </tr>
+          <tr>
+            <td>Academy</td>
+            <td>Review dan validasi</td>
+            <td>Akses penuh untuk review dan approval</td>
+          </tr>
+          <tr>
+            <td>Peserta</td>
+            <td>Belajar dan mengikuti kelas</td>
+            <td>Hanya data dirinya dan kelasnya</td>
+          </tr>
+          <tr>
+            <td>Management</td>
+            <td>Monitoring</td>
+            <td>Read-only untuk dashboard dan laporan</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <strong>Catatan:</strong> Sistem ini memiliki pembagian peran yang jelas agar setiap pengguna hanya melihat dan mengelola area yang sesuai dengan tugasnya.
+    </div>
+  </div>
+</body>
+</html>
