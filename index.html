@@ -12,51 +12,51 @@
    ============================================================ */
   :root {
     color-scheme: light;
-    --ground: #f2f5f2;
+    --ground: #EFF3F4;
     --surface: #ffffff;
-    --surface-2: #f7faf8;
-    --surface-3: #eaefeb;
-    --sidebar: #10201c;
-    --sidebar-2: #172c26;
-    --sidebar-ink: #cfe0d9;
-    --sidebar-mut: #7e9a90;
-    --ink: #101815;
-    --ink-2: #4e625a;
-    --ink-3: #7d918a;
-    --line: #dbe3de;
-    --line-2: #eaefeb;
-    --brand: #0d6b58;
-    --brand-2: #0a5546;
-    --brand-soft: #e2f0eb;
-    --brand-ink: #08483b;
-    --brass: #8f6413;
-    --brass-soft: #f8efd9;
+    --surface-2: #E7F3F4;
+    --surface-3: #D6E0E2;
+    --sidebar: #00323A;
+    --sidebar-2: #00282E;
+    --sidebar-ink: #E7F3F4;
+    --sidebar-mut: #587178;
+    --ink: #0E2429;
+    --ink-2: #587178;
+    --ink-3: #587178;
+    --line: #D6E0E2;
+    --line-2: #D6E0E2;
+    --brand: #00636F;
+    --brand-2: #00505A;
+    --brand-soft: #E7F3F4;
+    --brand-ink: #00323A;
+    --brass: #DD4B12;
+    --brass-soft: #FDE8E0;
     /* status (fixed, never themed) */
-    --good: #0ca30c;
-    --good-ink: #056b05;
-    --good-soft: #e2f4e2;
-    --warning: #fab219;
-    --warn-ink: #855c00;
-    --warn-soft: #fdf1d8;
-    --serious: #ec835a;
-    --serious-ink: #93441f;
-    --serious-soft: #fbe9e0;
-    --critical: #d03b3b;
-    --crit-ink: #96201f;
-    --crit-soft: #fbe4e4;
-    --info-soft: #e3edfb;
-    --info-ink: #184f95;
+    --good: #15703F;
+    --good-ink: #0C4426;
+    --good-soft: #DFF0E5;
+    --warning: #9A4708;
+    --warn-ink: #5F2B04;
+    --warn-soft: #FAEDD9;
+    --serious: #DD4B12;
+    --serious-ink: #8A2D0A;
+    --serious-soft: #FCE8E0;
+    --critical: #B3261E;
+    --crit-ink: #7A1711;
+    --crit-soft: #F9E0DF;
+    --info-soft: #E7F3F4;
+    --info-ink: #00323A;
     /* chart */
     --c-surface: #ffffff;
-    --c-grid: #e6ebe7;
-    --c-axis: #c6d1cb;
-    --c-muted: #7d918a;
-    --seq-100: #cde2fb;
-    --seq-250: #86b6ef;
-    --seq-350: #5598e7;
-    --seq-450: #2a78d6;
-    --seq-550: #1c5cab;
-    --seq-650: #104281;
+    --c-grid: #D6E0E2;
+    --c-axis: #587178;
+    --c-muted: #587178;
+    --seq-100: #E7F3F4;
+    --seq-250: #8CC4CD;
+    --seq-350: #008C9B;
+    --seq-450: #008C9B;
+    --seq-550: #00636F;
+    --seq-650: #00323A;
     --shadow-1: 0 1px 2px rgba(16, 24, 21, .06), 0 1px 1px rgba(16, 24, 21, .04);
     --shadow-2: 0 10px 30px -12px rgba(16, 24, 21, .22), 0 2px 6px rgba(16, 24, 21, .06);
     --r-sm: 5px;
@@ -66,53 +66,6 @@
     --sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --display: "Archivo", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      color-scheme: dark;
-      --ground: #0b110f;
-      --surface: #131b18;
-      --surface-2: #182220;
-      --surface-3: #1f2b27;
-      --sidebar: #0a1210;
-      --sidebar-2: #131f1b;
-      --sidebar-ink: #c3d6cf;
-      --sidebar-mut: #6d857c;
-      --ink: #e9f0ec;
-      --ink-2: #9fb3aa;
-      --ink-3: #7a8c85;
-      --line: #25332e;
-      --line-2: #1c2724;
-      --brand: #2fa78d;
-      --brand-2: #43bda2;
-      --brand-soft: #12312a;
-      --brand-ink: #7fd9c2;
-      --brass: #d0a03f;
-      --brass-soft: #322612;
-      --good-ink: #6ede6e;
-      --good-soft: #123012;
-      --warn-ink: #f6ce74;
-      --warn-soft: #322613;
-      --serious-ink: #f3ad8e;
-      --serious-soft: #33201a;
-      --crit-ink: #f19292;
-      --crit-soft: #331818;
-      --info-soft: #14243a;
-      --info-ink: #9ac4f5;
-      --c-surface: #131b18;
-      --c-grid: #22302b;
-      --c-axis: #2e3f39;
-      --c-muted: #8fa39b;
-      --seq-100: #123055;
-      --seq-250: #184f95;
-      --seq-350: #256abf;
-      --seq-450: #3987e5;
-      --seq-550: #6da7ec;
-      --seq-650: #9ec5f4;
-      --shadow-1: 0 1px 2px rgba(0, 0, 0, .4);
-      --shadow-2: 0 12px 34px -14px rgba(0, 0, 0, .7), 0 2px 6px rgba(0, 0, 0, .3);
-    }
   }
 
   :root[data-theme="dark"] {
@@ -992,6 +945,27 @@
 
   .modal.xwide {
     max-width: 1180px;
+  }
+
+  .modal-bg:has(.modal.full) {
+    padding: 0;
+  }
+  
+  .modal.full {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal.full .modal-b {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
   }
 
   .modal-h {
@@ -3721,6 +3695,345 @@
       };
       return [cols.map(c => esc(c.label)).join(s0), ...rows.map(r => cols.map(c => esc(typeof c.get === "function" ? c.get(r) : r[c.key])).join(s0))].join("\n");
     };
+    /* ------------------------------------------------------- IMPOR / EKSPOR
+       Penambahan massal (akun, peserta kelas, kelas) lewat CSV atau tempel
+       langsung dari Excel / Google Sheets.
+       ====================================================================== */
+    const exportCSV = (name, cols, rows, toast) =>
+      saveFile(name, "text/csv;charset=utf-8", withBOM(toCSV(cols, rows, ";")), toast);
+    /* Pemisah dideteksi otomatis: koma, titik koma, atau TAB (hasil salin
+       dari Excel). Mendukung tanda kutip ganda dan newline di dalam sel. */
+    const parseDelimited = text => {
+      const src = String(text || "").replace(/^﻿/, "").replace(/\r\n?/g, "\n");
+      if (!src.trim()) return [];
+      const head = src.split("\n")[0];
+      const n = ch => head.split(ch).length - 1;
+      const sep = n("\t") > n(";") && n("\t") > n(",") ? "\t" : n(";") > n(",") ? ";" : ",";
+      const rows = [];
+      let row = [], cell = "", q = false;
+      for (let i = 0; i < src.length; i++) {
+        const ch = src[i];
+        if (q) {
+          if (ch === '"' && src[i + 1] === '"') { cell += '"'; i++; }
+          else if (ch === '"') q = false;
+          else cell += ch;
+        } else if (ch === '"') q = true;
+        else if (ch === sep) { row.push(cell); cell = ""; }
+        else if (ch === "\n") { row.push(cell); rows.push(row); row = []; cell = ""; }
+        else cell += ch;
+      }
+      row.push(cell);
+      rows.push(row);
+      return rows.filter(r => r.some(v => String(v).trim() !== ""));
+    };
+    const normKey = s => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    /* Baris pertama dipakai sebagai header; nama kolom dicocokkan longgar
+       (huruf besar/kecil, spasi, dan tanda baca diabaikan). */
+    const rowsToObjects = (table, fields) => {
+      if (!table.length) return [];
+      const head = table[0].map(normKey);
+      const map = {};
+      fields.forEach(f => {
+        const al = [f.key, f.label].concat(f.alias || []).map(normKey);
+        const i = head.findIndex(h => h && al.includes(h));
+        if (i >= 0) map[f.key] = i;
+      });
+      return table.slice(1).map(r => {
+        const o = {};
+        fields.forEach(f => {
+          o[f.key] = String((map[f.key] != null ? r[map[f.key]] : "") || "").trim();
+        });
+        return o;
+      });
+    };
+    /* Nomor urut tertinggi dari ID sebuah koleksi, agar ID massal tidak dobel. */
+    const maxIdNo = c => db.list(c).reduce((m, r) => {
+      const g = String(r.id || "").match(/(\d+)\s*$/);
+      return g ? Math.max(m, Number(g[1])) : m;
+    }, 0);
+    /* Menerima 2026-09-10 09:00, 2026-09-10T09:00, dan 10/09/2026 09:00. */
+    const parseDateInput = v => {
+      const t = String(v || "").trim();
+      if (!t) return "";
+      const m = t.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})(?:[ T](\d{1,2}):(\d{2}))?/);
+      const d = m ? new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1]), Number(m[4] || 8), Number(m[5] || 0))
+        : new Date(t.replace(" ", "T"));
+      return isNaN(d.getTime()) ? "" : d.toISOString();
+    };
+
+    /** Modal impor generik.
+        fields  : [{ key, label, alias:[], req, sample }]
+        onApply : (barisValid) => { message } — boleh async  */
+    function ImportModal({ title, sub, fields, templateName, note, extra, onApply, onClose }) {
+      const toast = useToast();
+      const [raw, setRaw] = useState("");
+      const [busy, setBusy] = useState(false);
+      const fileRef = useRef();
+      const rows = raw.trim() ? rowsToObjects(parseDelimited(raw), fields) : [];
+      const isOk = r => fields.every(f => !f.req || r[f.key]);
+      const ok = rows.filter(isOk);
+      const bad = rows.length - ok.length;
+      const readFile = e => {
+        const file = (e.target.files || [])[0];
+        e.target.value = "";
+        if (!file) return;
+        const rd = new FileReader();
+        rd.onload = () => setRaw(String(rd.result || ""));
+        rd.onerror = () => toast("Gagal membaca berkas.", "err");
+        rd.readAsText(file);
+      };
+      const apply = async () => {
+        if (!ok.length) return;
+        setBusy(true);
+        try {
+          const res = await onApply(ok);
+          toast((res && res.message) || `${ok.length} baris diimpor`);
+          onClose();
+        } catch (err) {
+          toast((err && err.message) || "Impor gagal.", "err");
+          setBusy(false);
+        }
+      };
+      return /*#__PURE__*/React.createElement(Modal, {
+        title: title, sub: sub, size: "wide", onClose: onClose,
+        footer: /*#__PURE__*/React.createElement(React.Fragment, null,
+          /*#__PURE__*/React.createElement(Btn, { onClick: onClose }, "Batal"),
+          /*#__PURE__*/React.createElement(Btn, {
+          kind: "primary", icon: "upload", disabled: !ok.length || busy, onClick: apply
+        }, busy ? "Mengimpor…" : `Impor ${ok.length} baris`))
+      },
+        /*#__PURE__*/React.createElement("div", { className: "col", style: { gap: 12 } },
+          /*#__PURE__*/React.createElement("div", { className: "row", style: { gap: 8 } },
+            /*#__PURE__*/React.createElement(Btn, {
+        size: "sm", icon: "upload", onClick: () => fileRef.current && fileRef.current.click()
+      }, "Pilih berkas CSV"),
+            /*#__PURE__*/React.createElement("input", {
+        ref: fileRef, type: "file", accept: ".csv,.tsv,.txt", onChange: readFile,
+        style: { display: "none" }
+      }),
+            /*#__PURE__*/React.createElement(Btn, {
+        size: "sm", icon: "download",
+        onClick: () => saveFile(templateName || "template-impor.csv", "text/csv;charset=utf-8",
+          withBOM(fields.map(f => f.label).join(";") + "\n" + fields.map(f => f.sample || "").join(";")), toast)
+      }, "Unduh template"),
+            /*#__PURE__*/React.createElement("div", { style: { flex: 1 } }),
+        rows.length > 0 && /*#__PURE__*/React.createElement(Badge, { tone: ok.length ? "good" : "warn", dot: true },
+          ok.length, " baris siap", bad ? ` · ${bad} baris tidak lengkap` : "")),
+          /*#__PURE__*/React.createElement(Field, {
+            label: "Atau tempel data dari Excel / Google Sheets",
+            hint: "Baris pertama harus berisi nama kolom. Kolom: " +
+              fields.map(f => f.label + (f.req ? " *" : "")).join(" · ")
+          }, /*#__PURE__*/React.createElement(Area, {
+            rows: 6, value: raw, onChange: e => setRaw(e.target.value),
+            placeholder: fields.map(f => f.label).join(";") + "\n" + fields.map(f => f.sample || "").join(";"),
+            style: { fontFamily: "var(--mono)", fontSize: 12 }
+          })),
+        extra,
+        note && /*#__PURE__*/React.createElement("div", { className: "dim", style: { fontSize: 12 } }, note),
+        rows.length > 0 && /*#__PURE__*/React.createElement("div", {
+          className: "scroll-x",
+          style: { border: "1px solid var(--line)", borderRadius: 9, maxHeight: 240, overflowY: "auto" }
+        },
+            /*#__PURE__*/React.createElement("table", { className: "tbl" },
+              /*#__PURE__*/React.createElement("thead", null,
+                /*#__PURE__*/React.createElement("tr", null,
+                  /*#__PURE__*/React.createElement("th", { style: { width: 34 } }, "#"),
+          fields.map(f => /*#__PURE__*/React.createElement("th", { key: f.key }, f.label)),
+                  /*#__PURE__*/React.createElement("th", { style: { width: 90 } }, "Status"))),
+              /*#__PURE__*/React.createElement("tbody", null,
+            rows.slice(0, 50).map((r, i) => /*#__PURE__*/React.createElement("tr", { key: i },
+                  /*#__PURE__*/React.createElement("td", { className: "mono dim", style: { fontSize: 11 } }, i + 1),
+              fields.map(f => /*#__PURE__*/React.createElement("td", {
+                key: f.key, style: { fontSize: 12.5 }
+              }, r[f.key] || /*#__PURE__*/React.createElement("span", { className: "dim" }, "—"))),
+                  /*#__PURE__*/React.createElement("td", null,
+                    /*#__PURE__*/React.createElement(Badge, { tone: isOk(r) ? "good" : "crit" }, isOk(r) ? "Siap" : "Tidak lengkap")))))))));
+    }
+
+    /** Impor akun pengguna (employees + users). */
+    function ImportUsersModal({ onClose }) {
+      const { user, refresh } = useApp();
+      const [pwd, setPwd] = useState("akademi123");
+      const roles = db.list("roles");
+      const fields = [
+        { key: "name", label: "Nama", alias: ["namalengkap", "fullname"], req: true, sample: "Budi Santoso" },
+        { key: "email", label: "Email", alias: ["surel", "mail"], req: true, sample: "budi@perusahaan.co.id" },
+        { key: "role", label: "Role", alias: ["peran", "akses"], sample: "participant" },
+        { key: "nip", label: "NIP", alias: ["nomorindukpegawai"], sample: "NIP00123" },
+        { key: "unit", label: "Unit", alias: ["unitkerja", "divisi"], sample: "Branch Operation" },
+        { key: "position", label: "Jabatan", alias: ["posisi", "title"], sample: "Teller" },
+        { key: "password", label: "Password", alias: ["katasandi", "sandi"], sample: "" }
+      ];
+      const roleId = v => {
+        const n = normKey(v);
+        if (!n) return "participant";
+        const hit = roles.find(r => normKey(r.id) === n) || roles.find(r => normKey(r.name) === n);
+        if (hit) return hit.id;
+        if (n.indexOf("peserta") >= 0) return "participant";
+        if (n.indexOf("sme") >= 0 || n.indexOf("fasilitator") >= 0) return "sme";
+        if (n.indexOf("admin") >= 0 || n.indexOf("academy") >= 0) return "academy_admin";
+        if (n.indexOf("manaj") >= 0 || n.indexOf("manage") >= 0) return "management";
+        return "participant";
+      };
+      const apply = rows => {
+        const seen = db.list("users").map(u => String(u.email || "").toLowerCase());
+        let no = maxIdNo("employees"), made = 0, dup = 0, weak = 0;
+        rows.forEach(r => {
+          const mail = r.email.toLowerCase();
+          if (seen.includes(mail)) { dup++; return; }
+          const pass = r.password || pwd;
+          if (String(pass).length < 6) { weak++; return; }
+          seen.push(mail);
+          no++;
+          const empId = `EMP-${String(no).padStart(3, "0")}`;
+          const role = roleId(r.role);
+          db.insert("employees", {
+            id: empId, name: r.name, nip: r.nip || `NIP${String(no).padStart(5, "0")}`,
+            email: r.email, unit: r.unit, position: r.position, expertise: "",
+            is_sme: role === "sme", is_participant: role === "participant", avatar: null
+          });
+          db.insert("users", {
+            id: uid("USR"), name: r.name, email: r.email, password: pass,
+            role: role, employee_id: empId, active: true
+          });
+          made++;
+        });
+        svc.audit(user.employee_id, "account.import", `Impor massal ${made} akun (${dup} duplikat dilewati)`);
+        refresh();
+        return { message: `${made} akun dibuat · ${dup} email duplikat dilewati${weak ? ` · ${weak} password terlalu pendek` : ""}` };
+      };
+      return /*#__PURE__*/React.createElement(ImportModal, {
+        title: "Impor Akun Massal",
+        sub: "Nama dan Email wajib. Role kosong dianggap Peserta.",
+        fields: fields, templateName: "template-akun.csv", onApply: apply, onClose: onClose,
+        note: "Email yang sudah terdaftar otomatis dilewati sehingga aman diimpor ulang.",
+        extra: /*#__PURE__*/React.createElement(Field, {
+          label: "Password default", hint: "Dipakai bila kolom Password kosong. Minimal 6 karakter."
+        }, /*#__PURE__*/React.createElement(Input, { value: pwd, onChange: e => setPwd(e.target.value) }))
+      });
+    }
+
+    /** Impor peserta ke satu kelas — dicocokkan lewat NIP atau Email. */
+    function ImportClassParticipantsModal({ classId, onClose }) {
+      const { user, refresh } = useApp();
+      const [makeNew, setMakeNew] = useState(true);
+      const [pwd, setPwd] = useState("akademi123");
+      const fields = [
+        { key: "nip", label: "NIP", alias: ["nomorindukpegawai"], sample: "NIP00123" },
+        { key: "email", label: "Email", alias: ["surel"], sample: "budi@perusahaan.co.id" },
+        { key: "name", label: "Nama", alias: ["namalengkap"], sample: "Budi Santoso" },
+        { key: "unit", label: "Unit", alias: ["unitkerja", "divisi"], sample: "Branch Operation" },
+        { key: "position", label: "Jabatan", alias: ["posisi"], sample: "Teller" }
+      ];
+      const apply = rows => {
+        const emps = db.list("employees");
+        const inClass = db.list("class_participants", { class_id: classId }).map(p => p.employee_id);
+        let no = maxIdNo("employees"), added = 0, already = 0, missing = 0, created = 0;
+        rows.forEach(r => {
+          const nip = normKey(r.nip), mail = String(r.email || "").toLowerCase();
+          let emp = emps.find(e => (nip && normKey(e.nip) === nip) || (mail && String(e.email || "").toLowerCase() === mail));
+          if (!emp && makeNew && r.name) {
+            no++;
+            const empId = `EMP-${String(no).padStart(3, "0")}`;
+            emp = db.insert("employees", {
+              id: empId, name: r.name, nip: r.nip || `NIP${String(no).padStart(5, "0")}`,
+              email: r.email, unit: r.unit, position: r.position, expertise: "",
+              is_sme: false, is_participant: true, avatar: null
+            });
+            emps.push(emp);
+            if (r.email && String(pwd).length >= 6 && !db.one("users", { email: r.email })) {
+              db.insert("users", {
+                id: uid("USR"), name: r.name, email: r.email, password: pwd,
+                role: "participant", employee_id: empId, active: true
+              });
+            }
+            created++;
+          }
+          if (!emp) { missing++; return; }
+          if (inClass.includes(emp.id)) { already++; return; }
+          db.insert("class_participants", {
+            id: uid("CP"), class_id: classId, employee_id: emp.id,
+            status: "enrolled", enrolled_at: nowISO()
+          });
+          inClass.push(emp.id);
+          added++;
+        });
+        const k = db.get("classes", classId) || {};
+        svc.audit(user.employee_id, "class.import_participants", `${added} peserta diimpor ke kelas ${k.code || classId}`);
+        refresh();
+        return { message: `${added} peserta ditambahkan · ${created} akun baru · ${already} sudah terdaftar · ${missing} tidak ditemukan` };
+      };
+      return /*#__PURE__*/React.createElement(ImportModal, {
+        title: "Impor Peserta Kelas",
+        sub: "Peserta dicocokkan lewat NIP atau Email yang sudah terdaftar",
+        fields: fields, templateName: "template-peserta-kelas.csv", onApply: apply, onClose: onClose,
+        note: "Peserta yang sudah ada di kelas ini dilewati otomatis.",
+        extra: /*#__PURE__*/React.createElement("div", { className: "col", style: { gap: 10 } },
+          /*#__PURE__*/React.createElement("label", { className: "check" + (makeNew ? " on" : "") },
+            /*#__PURE__*/React.createElement("input", {
+          type: "checkbox", checked: makeNew, onChange: e => setMakeNew(e.target.checked)
+        }), "Buatkan akun baru bila NIP/Email belum terdaftar (kolom Nama wajib diisi)"),
+          makeNew && /*#__PURE__*/React.createElement(Field, {
+            label: "Password default akun baru", hint: "Minimal 6 karakter"
+          }, /*#__PURE__*/React.createElement(Input, { value: pwd, onChange: e => setPwd(e.target.value) })))
+      });
+    }
+
+    /** Impor kelas massal, sekaligus mendaftarkan pesertanya lewat kolom NIP. */
+    function ImportClassesModal({ onClose }) {
+      const { user, refresh } = useApp();
+      const fields = [
+        { key: "module", label: "Kode Modul", alias: ["modul", "kodemodul", "modulecode"], req: true, sample: "MOD-001" },
+        { key: "name", label: "Nama Kelas", alias: ["kelas", "namakelas"], sample: "Dasar Layanan — Batch 1" },
+        { key: "batch", label: "Batch", sample: "Batch 1" },
+        { key: "room", label: "Ruangan", alias: ["ruang"], sample: "Ruang Kelas 3A" },
+        { key: "start", label: "Jadwal Mulai", alias: ["jadwal", "mulai", "tanggal", "startat"], req: true, sample: "2026-09-10 09:00" },
+        { key: "quota", label: "Kuota", alias: ["kapasitas"], sample: "20" },
+        { key: "nips", label: "NIP Peserta", alias: ["peserta", "nippeserta"], sample: "NIP00123, NIP00124" }
+      ];
+      const apply = rows => {
+        const mods = db.list("modules");
+        const emps = db.list("employees");
+        let no = maxIdNo("classes"), made = 0, skipped = 0, enrolled = 0, notFound = 0;
+        rows.forEach(r => {
+          const key = normKey(r.module);
+          const mod = mods.find(m => normKey(m.code) === key || normKey(m.id) === key || normKey(m.name) === key);
+          const start = parseDateInput(r.start);
+          if (!mod || !["approved", "ready_to_deliver"].includes(mod.status) || !start) { skipped++; return; }
+          no++;
+          const id = `CLS-${String(no).padStart(3, "0")}`;
+          const batch = r.batch || "Batch 1";
+          db.insert("classes", {
+            id: id, code: id, name: r.name || `${mod.name} — ${batch}`,
+            module_id: mod.id, program_id: mod.program_id, sme_id: mod.sme_id,
+            status: "ready", batch: batch, room: r.room || "Ruang Kelas 3A",
+            start_at: start, end_at: new Date(new Date(start).getTime() + 7 * 3600000).toISOString(),
+            quota: Number(r.quota) || 20
+          });
+          String(r.nips || "").split(/[,;|\n]+/).map(s => normKey(s)).filter(Boolean).forEach(nip => {
+            const emp = emps.find(e => normKey(e.nip) === nip || normKey(e.id) === nip);
+            if (!emp) { notFound++; return; }
+            db.insert("class_participants", {
+              id: uid("CP"), class_id: id, employee_id: emp.id,
+              status: "enrolled", enrolled_at: nowISO()
+            });
+            enrolled++;
+          });
+          made++;
+        });
+        svc.audit(user.employee_id, "class.import", `Impor massal ${made} kelas, ${enrolled} peserta`);
+        refresh();
+        return { message: `${made} kelas dibuat · ${enrolled} peserta terdaftar${skipped ? ` · ${skipped} baris dilewati (modul/jadwal tidak valid)` : ""}${notFound ? ` · ${notFound} NIP tidak ditemukan` : ""}` };
+      };
+      return /*#__PURE__*/React.createElement(ImportModal, {
+        title: "Impor Kelas Massal",
+        sub: "Hanya modul berstatus Approved / Ready to Deliver yang dapat dijadwalkan",
+        fields: fields, templateName: "template-kelas.csv", onApply: apply, onClose: onClose,
+        note: "Kolom NIP Peserta boleh berisi beberapa NIP dipisah koma — pesertanya langsung didaftarkan ke kelas itu."
+      });
+    }
+
+
     /* ------------------------------------------------------------ vocabulary */
     const MODULE_STATUS = {
       draft: {
@@ -4687,6 +5000,7 @@
       className,
       ...rest
     }) => /*#__PURE__*/React.createElement("button", {
+      type: "button",
       className: ["btn", kind, size, className].filter(Boolean).join(" "),
       ...rest
     }, icon && /*#__PURE__*/React.createElement(Icon, {
@@ -5836,52 +6150,15 @@
             }
           }, "· ", b.note));
         case "file":
-          return /*#__PURE__*/React.createElement("div", {
+          if (!b.file_id && !b.url) return /*#__PURE__*/React.createElement("div", {
             className: "row",
-            style: {
-              border: "1px solid var(--line)",
-              borderRadius: 8,
-              padding: "9px 12px",
-              marginBottom: 14,
-              maxWidth: "72ch"
-            }
-          }, /*#__PURE__*/React.createElement(Icon, {
-            name: "file",
-            size: 17,
-            style: {
-              color: "var(--brand)"
-            }
-          }), /*#__PURE__*/React.createElement("div", {
-            style: {
-              flex: 1
-            }
-          }, /*#__PURE__*/React.createElement("div", {
-            style: {
-              fontSize: 13.5,
-              fontWeight: 500
-            }
-          }, b.label), /*#__PURE__*/React.createElement("div", {
-            className: "dim mono",
-            style: {
-              fontSize: 11.5
-            }
-          }, b.filename, b.size_kb ? " · " + fmtSize(b.size_kb) : "")), b.url ? /*#__PURE__*/React.createElement("a", {
-            className: "btn xs",
-            href: b.url,
-            target: "_blank",
-            rel: "noopener",
-            style: {
-              textDecoration: "none"
-            }
-          }, /*#__PURE__*/React.createElement(Icon, {
-            name: "download",
-            size: 13
-          }), "Unduh") : /*#__PURE__*/React.createElement("span", {
-            className: "dim",
-            style: {
-              fontSize: 11.5
-            }
-          }, "Berkas belum diunggah"));
+            style: { border: "1px solid var(--line)", borderRadius: 8, padding: "9px 12px", marginBottom: 14, maxWidth: "72ch" }
+          }, /*#__PURE__*/React.createElement(Icon, { name: "file", size: 17, style: { color: "var(--brand)" } }),
+            /*#__PURE__*/React.createElement("div", { style: { flex: 1 } },
+              /*#__PURE__*/React.createElement("div", { style: { fontSize: 13.5, fontWeight: 500 } }, b.label),
+              /*#__PURE__*/React.createElement("div", { className: "dim mono", style: { fontSize: 11.5 } }, b.filename)),
+            /*#__PURE__*/React.createElement("span", { className: "dim", style: { fontSize: 11.5 } }, "Berkas belum diunggah"));
+          return /*#__PURE__*/React.createElement(InlineFilePlayer, { f: b, label: b.label, note: b.note });
         case "quiz":
           return /*#__PURE__*/React.createElement(InlineQuiz, {
             block: b
@@ -6002,6 +6279,10 @@
           r: "a-accounts",
           t: "Kelola Akun",
           i: "users"
+        }, {
+          r: "a-mass-delete",
+          t: "Hapus Data Masal",
+          i: "trash"
         }, {
           r: "a-settings",
           t: "Settings",
@@ -6958,6 +7239,7 @@
       }, g.label && /*#__PURE__*/React.createElement("div", {
         className: "navlabel"
       }, g.label), g.items.map(it => /*#__PURE__*/React.createElement("button", {
+        type: "button",
         key: it.r,
         className: "navitem" + (route === it.r ? " active" : ""),
         onClick: () => {
@@ -6993,6 +7275,7 @@
       }, user.name), /*#__PURE__*/React.createElement("div", {
         className: "rl"
       }, (db.get("roles", user.role) || {}).name)), /*#__PURE__*/React.createElement("button", {
+        type: "button",
         className: "navitem",
         style: {
           width: "auto",
@@ -8546,6 +8829,114 @@
       return c ? c.label : key || "Lainnya";
     };
 
+    /* ------------------------------------------------- PEMUTAR BERKAS IN-APP
+       Berkas tidak perlu diunduh: gambar tampil langsung, video/audio/PDF/
+       Office diputar lewat penampil Google Drive di dalam halaman.
+       ====================================================================== */
+    const fileExtOf = f => {
+      const n = String((f && (f.file_name || f.filename || f.label)) || "").toLowerCase();
+      const i = n.lastIndexOf(".");
+      return i >= 0 ? n.slice(i + 1) : "";
+    };
+    const FILE_KIND = f => {
+      const m = String((f && f.mime_type) || "").toLowerCase();
+      const e = fileExtOf(f);
+      if (m.indexOf("image/") === 0 || ["png", "jpg", "jpeg", "webp", "gif", "bmp", "svg"].includes(e)) return "image";
+      if (m.indexOf("video/") === 0 || ["mp4", "mov", "webm", "m4v", "mkv", "avi"].includes(e)) return "video";
+      if (m.indexOf("audio/") === 0 || ["mp3", "wav", "m4a", "ogg", "aac"].includes(e)) return "audio";
+      if (m.indexOf("pdf") >= 0 || e === "pdf") return "pdf";
+      if (m.indexOf("presentation") >= 0 || m.indexOf("powerpoint") >= 0 || ["ppt", "pptx"].includes(e)) return "slide";
+      if (m.indexOf("sheet") >= 0 || m.indexOf("excel") >= 0 || m.indexOf("csv") >= 0 || ["xls", "xlsx", "csv"].includes(e)) return "sheet";
+      if (m.indexOf("word") >= 0 || m.indexOf("document") >= 0 || ["doc", "docx"].includes(e)) return "doc";
+      return "other";
+    };
+    const KIND_LABEL = { image: "Gambar", video: "Video", audio: "Audio", pdf: "PDF", slide: "Presentasi", doc: "Dokumen", sheet: "Spreadsheet", other: "Berkas" };
+    const KIND_ICON = { image: "eye", video: "play", audio: "play", pdf: "file", slide: "layers", doc: "file", sheet: "grid", other: "file" };
+    const PLAYABLE = { video: true, audio: true };
+    const driveIdOf = f => {
+      if (!f) return "";
+      if (f.file_id) return String(f.file_id);
+      const m = String(f.preview_url || f.drive_url || f.download_url || f.url || f.href || "").match(/[-\w]{25,}/);
+      return m ? m[0] : "";
+    };
+    const filePreviewSrc = f => {
+      const id = driveIdOf(f);
+      return id ? "https://drive.google.com/file/d/" + id + "/preview" : (f && (f.preview_url || f.url)) || "";
+    };
+    const fileImageSrc = f => {
+      const id = driveIdOf(f);
+      return id ? "https://drive.google.com/thumbnail?id=" + id + "&sz=w1600" : (f && (f.preview_url || f.url || f.download_url)) || "";
+    };
+    const fileDlHref = f => (f && (f.download_url || f.url || f.drive_url || f.href)) || "";
+    const fileOpenHref = f => {
+      const id = driveIdOf(f);
+      return (f && (f.drive_url || f.href)) || (id ? "https://drive.google.com/file/d/" + id + "/view" : fileDlHref(f));
+    };
+    const fileTitleOf = f => (f && (f.file_name || f.filename || f.label)) || "Berkas";
+
+    /** Pemutar satu berkas di dalam halaman. */
+    function FilePlayer({ f, height }) {
+      const [imgErr, setImgErr] = useState(false);
+      const kind = FILE_KIND(f);
+      const src = filePreviewSrc(f);
+      if (!src) return /*#__PURE__*/React.createElement(Empty, { title: "Berkas ini belum dapat ditampilkan", icon: "file" });
+      if (kind === "image" && !imgErr) return /*#__PURE__*/React.createElement("div", {
+        style: { display: "grid", placeItems: "center", minHeight: 220, padding: 10, background: "var(--surface-2)", border: "1px solid var(--line)", borderRadius: 10 }
+      }, /*#__PURE__*/React.createElement("img", {
+        src: fileImageSrc(f), alt: fileTitleOf(f), loading: "lazy",
+        onError: () => setImgErr(true),
+        style: { maxWidth: "100%", maxHeight: height || 470, borderRadius: 8 }
+      }));
+      if (kind === "audio") return /*#__PURE__*/React.createElement("iframe", {
+        src: src, title: fileTitleOf(f), allow: "autoplay",
+        style: { width: "100%", height: 92, border: "1px solid var(--line)", borderRadius: 10, background: "var(--surface-2)" }
+      });
+      if (kind === "video") return /*#__PURE__*/React.createElement("div", {
+        style: { position: "relative", paddingTop: "56.25%", background: "#000", border: "1px solid var(--line)", borderRadius: 10, overflow: "hidden" }
+      }, /*#__PURE__*/React.createElement("iframe", {
+        src: src, title: fileTitleOf(f), allow: "autoplay; fullscreen", allowFullScreen: true,
+        style: { position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }
+      }));
+      return /*#__PURE__*/React.createElement("iframe", {
+        src: src, title: fileTitleOf(f), allowFullScreen: true,
+        style: { width: "100%", height: height || 470, border: "1px solid var(--line)", borderRadius: 10, background: "var(--surface-2)" }
+      });
+    }
+
+    const PlayerBar = ({ f }) => /*#__PURE__*/React.createElement("div", {
+      className: "row", style: { gap: 8, marginTop: 8 }
+    }, /*#__PURE__*/React.createElement("span", { className: "dim", style: { fontSize: 11.5, flex: 1, minWidth: 140 } },
+      "Diputar langsung dari Google Drive. Tidak tampil? Buka di Drive atau unduh."),
+      /*#__PURE__*/React.createElement("a", { className: "btn xs", href: fileOpenHref(f), target: "_blank", rel: "noopener", style: { textDecoration: "none" } },
+        /*#__PURE__*/React.createElement(Icon, { name: "eye", size: 13 }), "Buka di Drive"),
+      /*#__PURE__*/React.createElement("a", { className: "btn xs", href: fileDlHref(f), target: "_blank", rel: "noopener", style: { textDecoration: "none" } },
+        /*#__PURE__*/React.createElement(Icon, { name: "download", size: 13 }), "Unduh"));
+
+    /** Lampiran di dalam konten section: dapat dibuka/diputar tanpa unduh. */
+    function InlineFilePlayer({ f, label, note }) {
+      const [open, setOpen] = useState(false);
+      const kind = FILE_KIND(f);
+      const playable = !!filePreviewSrc(f);
+      return /*#__PURE__*/React.createElement("div", {
+        style: { border: "1px solid var(--line)", borderRadius: 10, marginBottom: 14, maxWidth: "72ch", background: "var(--surface)", overflow: "hidden" }
+      }, /*#__PURE__*/React.createElement("div", { className: "row", style: { gap: 10, padding: "9px 12px", flexWrap: "nowrap" } },
+        /*#__PURE__*/React.createElement(Icon, { name: KIND_ICON[kind], size: 17, style: { color: "var(--brand)", flex: "none" } }),
+        /*#__PURE__*/React.createElement("div", { style: { flex: 1, minWidth: 0 } },
+          /*#__PURE__*/React.createElement("div", { style: { fontSize: 13.5, fontWeight: 500, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } }, label || fileTitleOf(f)),
+          /*#__PURE__*/React.createElement("div", { className: "dim mono", style: { fontSize: 11.5 } }, KIND_LABEL[kind], f.size_kb ? " · " + fmtSize(f.size_kb) : "")),
+        playable && /*#__PURE__*/React.createElement(Btn, {
+          size: "xs", kind: open ? "ghost" : "primary", icon: open ? "up" : KIND_ICON[kind],
+          onClick: () => setOpen(!open)
+        }, open ? "Tutup" : PLAYABLE[kind] ? "Putar" : "Lihat"),
+        /*#__PURE__*/React.createElement("a", { className: "btn xs", href: fileDlHref(f), target: "_blank", rel: "noopener", style: { textDecoration: "none" } },
+          /*#__PURE__*/React.createElement(Icon, { name: "download", size: 13 }), "Unduh")),
+        open && /*#__PURE__*/React.createElement("div", { style: { padding: "0 12px 12px" } },
+          /*#__PURE__*/React.createElement(FilePlayer, { f: f, height: 460 }),
+          /*#__PURE__*/React.createElement(PlayerBar, { f: f })),
+        note && /*#__PURE__*/React.createElement("div", { className: "dim", style: { fontSize: 12, padding: "0 12px 10px" } }, note));
+    }
+
+
     function FileRow({
       f,
       onDelete,
@@ -8619,28 +9010,57 @@
       }));
     }
 
-    /** Daftar file modul untuk peserta / reviewer (hanya baca). */
-    function ModuleFileList({
-      moduleId,
-      title,
-      emptyText
-    }) {
+    /** Daftar + pemutar berkas modul untuk peserta / reviewer (hanya baca). */
+    function ModuleFileList({ moduleId, title, emptyText }) {
       const files = db.files(moduleId);
+      const [sel, setSel] = useState(0);
       if (!files.length) return /*#__PURE__*/React.createElement(Empty, {
-        title: emptyText || "Belum ada berkas pada modul ini",
-        icon: "download"
+        title: emptyText || "Belum ada berkas pada modul ini", icon: "download"
       });
-      return /*#__PURE__*/React.createElement("div", {
-        className: "col",
-        style: {
-          gap: 7
-        }
-      }, title && /*#__PURE__*/React.createElement("div", {
-        className: "eyebrow"
-      }, title), files.map(f => /*#__PURE__*/React.createElement(FileRow, {
-        key: f.id,
-        f: f
-      })));
+      const i = Math.min(sel, files.length - 1);
+      const cur = files[i];
+      const kind = FILE_KIND(cur);
+      return /*#__PURE__*/React.createElement("div", { className: "col", style: { gap: 10, height: "100%" } },
+        title && /*#__PURE__*/React.createElement("div", { className: "eyebrow", style: { flex: "none" } }, title),
+        /*#__PURE__*/React.createElement("div", {
+          className: "grid gsplit",
+          style: { "--cols": "250px minmax(0,1fr)", gap: 14, alignItems: "stretch", flex: 1, minHeight: 0 }
+        },
+          /*#__PURE__*/React.createElement("div", { className: "col", style: { gap: 6, maxHeight: "100%", overflowY: "auto", paddingBottom: 10 } },
+          files.map((f, k) => {
+            const kk = FILE_KIND(f);
+            return /*#__PURE__*/React.createElement("button", {
+              key: f.id || k, type: "button", onClick: () => setSel(k),
+              style: {
+                display: "flex", gap: 9, alignItems: "center", textAlign: "left", width: "100%",
+                cursor: "pointer", font: "inherit", color: "inherit", borderRadius: 9, padding: "8px 10px",
+                border: "1px solid " + (k === i ? "var(--brand)" : "var(--line)"),
+                background: k === i ? "var(--brand-soft)" : "var(--surface)"
+              }
+            },
+                /*#__PURE__*/React.createElement(Icon, { name: KIND_ICON[kk], size: 16, style: { color: "var(--brand)", flex: "none" } }),
+                /*#__PURE__*/React.createElement("span", { style: { flex: 1, minWidth: 0 } },
+                  /*#__PURE__*/React.createElement("span", {
+              style: { display: "block", fontSize: 13, fontWeight: 500, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+            }, fileTitleOf(f)),
+                  /*#__PURE__*/React.createElement("span", { className: "dim mono", style: { display: "block", fontSize: 10.5 } },
+              KIND_LABEL[kk], " · ", fmtSize(f.size_kb))));
+          })),
+          /*#__PURE__*/React.createElement("div", { style: { minWidth: 0, display: "flex", flexDirection: "column", height: "100%" } },
+            /*#__PURE__*/React.createElement("div", { className: "between", style: { marginBottom: 8, gap: 10, flex: "none" } },
+              /*#__PURE__*/React.createElement("div", { style: { minWidth: 0 } },
+                /*#__PURE__*/React.createElement("div", {
+            style: { fontWeight: 600, fontSize: 13.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+          }, fileTitleOf(cur)),
+                /*#__PURE__*/React.createElement("div", { className: "dim mono", style: { fontSize: 11 } },
+            catLabel(cur.category), " · ", fmtSize(cur.size_kb),
+            cur.uploaded_at ? " · " + fmtDate(cur.uploaded_at) : "")),
+              /*#__PURE__*/React.createElement(Badge, { tone: "info" }, KIND_LABEL[kind])),
+            /*#__PURE__*/React.createElement("div", { style: { flex: 1, minHeight: 0, display: "flex", flexDirection: "column" } },
+              /*#__PURE__*/React.createElement(FilePlayer, { f: cur, height: "100%" })
+            ),
+            /*#__PURE__*/React.createElement("div", { style: { flex: "none" } },
+              /*#__PURE__*/React.createElement(PlayerBar, { f: cur })))));
     }
 
     /** Pengelola berkas modul untuk SME / Academy Admin. */
@@ -10801,17 +11221,39 @@
     /* ------------------------------------------------------ kelas & monitoring */
     function ClassCard({
       c,
-      onOpen
+      onOpen,
+      selected,
+      onSelect
     }) {
       const st = svc.classStats(c.id);
       const r = svc.readiness(c.module_id);
       return /*#__PURE__*/React.createElement("div", {
         className: "card",
         style: {
-          cursor: "pointer"
+          cursor: "pointer",
+          position: "relative",
+          border: selected ? "2px solid var(--brand-5)" : undefined,
+          background: selected ? "var(--brand-0)" : undefined
         },
         onClick: () => onOpen(c)
-      }, /*#__PURE__*/React.createElement("div", {
+      }, onSelect && /*#__PURE__*/React.createElement("input", {
+        type: "checkbox",
+        checked: !!selected,
+        onChange: e => {
+          e.stopPropagation();
+          onSelect(e.target.checked);
+        },
+        onClick: e => e.stopPropagation(),
+        style: {
+          position: "absolute",
+          top: 14,
+          right: 14,
+          width: 18,
+          height: 18,
+          cursor: "pointer",
+          zIndex: 2
+        }
+      }), /*#__PURE__*/React.createElement("div", {
         className: "card-b"
       }, /*#__PURE__*/React.createElement("div", {
         className: "between",
@@ -10824,7 +11266,8 @@
       }), /*#__PURE__*/React.createElement("span", {
         className: "dim mono",
         style: {
-          fontSize: 11.5
+          fontSize: 11.5,
+          marginRight: onSelect ? 28 : 0
         }
       }, c.code)), /*#__PURE__*/React.createElement("div", {
         style: {
@@ -11195,6 +11638,7 @@
       } = useApp();
       const toast = useToast();
       const [showAddPart, setShowAddPart] = useState(false);
+      const [showImportPart, setShowImportPart] = useState(false);
       const [delClass, setDelClass] = useState(false);
       const classes = svc.visibleClasses(user);
       const [id, setId] = useState(params && params.id || (classes[0] || {}).id);
@@ -11235,6 +11679,21 @@
       }, (svc.module(c.module_id) || {}).name, " · Fasilitator ", (svc.employee(c.sme_id) || {}).name, " · ", fmtDate(c.start_at, true), " · ", c.room)), /*#__PURE__*/React.createElement("div", {
         className: "actions"
       }, user.role === "academy_admin" && /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        icon: "download",
+        onClick: () => exportCSV(`peserta-${c.code}.csv`, [
+          { key: "nip", label: "NIP", get: p => (svc.employee(p.employee_id) || {}).nip || "" },
+          { key: "name", label: "Nama", get: p => (svc.employee(p.employee_id) || {}).name || "" },
+          { key: "email", label: "Email", get: p => (svc.employee(p.employee_id) || {}).email || "" },
+          { key: "unit", label: "Unit", get: p => (svc.employee(p.employee_id) || {}).unit || "" },
+          { key: "position", label: "Jabatan", get: p => (svc.employee(p.employee_id) || {}).position || "" },
+          { key: "att", label: "Attendance", get: p => (db.one("attendance", { class_id: c.id, employee_id: p.employee_id }) || {}).status || "belum absen" }
+        ], parts, toast)
+      }, "Export Peserta"), user.role === "academy_admin" && /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        icon: "upload",
+        onClick: () => setShowImportPart(true)
+      }, "Import Peserta"), user.role === "academy_admin" && /*#__PURE__*/React.createElement(Btn, {
         size: "sm",
         kind: "primary",
         icon: "plus",
@@ -11485,6 +11944,12 @@
         classId: c.id,
         onClose: () => {
           setShowAddPart(false);
+          refresh();
+        }
+      }), showImportPart && /*#__PURE__*/React.createElement(ImportClassParticipantsModal, {
+        classId: c.id,
+        onClose: () => {
+          setShowImportPart(false);
           refresh();
         }
       }), delClass && /*#__PURE__*/React.createElement(Modal, {
@@ -12253,12 +12718,17 @@
       params
     }) {
       const {
-        nav
+        nav, user, refresh
       } = useApp();
       const [create, setCreate] = useState(!!(params && params.create));
+      const [importCls, setImportCls] = useState(false);
+      const toast = useToast();
       const [st, setSt] = useState("all");
+      const [sel, setSel] = useState({});
+      const [delClass, setDelClass] = useState(false);
       let classes = db.list("classes");
       if (st !== "all") classes = classes.filter(c => c.status === st);
+      const selCount = Object.keys(sel).filter(k => sel[k]).length;
       return /*#__PURE__*/React.createElement("div", {
         className: "content"
       }, /*#__PURE__*/React.createElement("div", {
@@ -12267,7 +12737,30 @@
         className: "desc"
       }, "Seluruh kelas beserta status end-to-end dan hasil pembelajarannya.")), /*#__PURE__*/React.createElement("div", {
         className: "actions"
-      }, /*#__PURE__*/React.createElement(Btn, {
+      }, selCount > 0 && /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        kind: "danger",
+        icon: "trash",
+        onClick: () => setDelClass(true)
+      }, `Hapus ${selCount} Terpilih`), /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        icon: "download",
+        onClick: () => exportCSV("daftar-kelas.csv", [
+          { key: "code", label: "Kode" },
+          { key: "name", label: "Nama Kelas" },
+          { key: "module", label: "Kode Modul", get: k => (svc.module(k.module_id) || {}).code || "" },
+          { key: "batch", label: "Batch" },
+          { key: "room", label: "Ruangan" },
+          { key: "start_at", label: "Jadwal Mulai", get: k => fmtDate(k.start_at, true) },
+          { key: "quota", label: "Kuota" },
+          { key: "status", label: "Status", get: k => (CLASS_STATUS[k.status] || {}).label || k.status },
+          { key: "peserta", label: "Jumlah Peserta", get: k => db.count("class_participants", { class_id: k.id }) }
+        ], classes, toast)
+      }, "Export CSV"), /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        icon: "upload",
+        onClick: () => setImportCls(true)
+      }, "Import Kelas"), /*#__PURE__*/React.createElement(Btn, {
         kind: "primary",
         icon: "plus",
         onClick: () => setCreate(true)
@@ -12309,12 +12802,44 @@
       }, classes.map(c => /*#__PURE__*/React.createElement(ClassCard, {
         key: c.id,
         c: c,
+        selected: !!sel[c.id],
+        onSelect: v => setSel(p => Object.assign({}, p, { [c.id]: v })),
         onOpen: () => nav("a-monitor", {
           id: c.id
         })
       }))), create && /*#__PURE__*/React.createElement(NewClassModal, {
         onClose: () => setCreate(false)
-      }));
+      }), importCls && /*#__PURE__*/React.createElement(ImportClassesModal, {
+        onClose: () => setImportCls(false)
+      }), delClass && /*#__PURE__*/React.createElement(Modal, {
+        title: "Konfirmasi Hapus Massal Kelas",
+        sub: "Tindakan ini tidak dapat dibatalkan",
+        onClose: () => setDelClass(false),
+        footer: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Btn, {
+          onClick: () => setDelClass(false)
+        }, "Batal"), /*#__PURE__*/React.createElement(Btn, {
+          kind: "danger",
+          icon: "trash",
+          onClick: () => {
+            const ids = Object.keys(sel).filter(k => sel[k]);
+            ids.forEach(cid => {
+              db.removeWhere("class_participants", { class_id: cid });
+              db.removeWhere("attendance", { class_id: cid });
+              db.removeWhere("submissions", { class_id: cid });
+              db.removeWhere("nps_responses", { class_id: cid });
+              db.removeWhere("assessment_attempts", { class_id: cid });
+              db.remove("classes", cid);
+            });
+            svc.audit(user.employee_id, "class.bulk_delete", `${ids.length} Kelas dihapus secara massal`);
+            toast(`${ids.length} kelas berhasil dihapus`);
+            setSel({});
+            setDelClass(false);
+            refresh();
+          }
+        }, "Ya, hapus permanen"))
+      }, /*#__PURE__*/React.createElement("p", {
+        style: { fontSize: 14, lineHeight: 1.7 }
+      }, "Anda akan menghapus ", /*#__PURE__*/React.createElement("b", null, selCount, " kelas"), " sekaligus. Seluruh data peserta, absensi, nilai pre/post-test, dan submission terkait kelas-kelas tersebut akan ikut terhapus. Yakin ingin melanjutkan?")));
     }
     /* --------------------------------------------------------- module library */
     function ModulePreviewModal({
@@ -13263,6 +13788,7 @@
 
     /* ----------------------------------------------------------- participants */
     function AcademyParticipants() {
+      const toast = useToast();
       const [q, setQ] = useState("");
       const [cls, setCls] = useState("all");
       let rows = db.list("class_participants");
@@ -13302,7 +13828,23 @@
         className: "pagehead"
       }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Peserta"), /*#__PURE__*/React.createElement("div", {
         className: "desc"
-      }, "Seluruh peserta lintas kelas beserta capaian pembelajarannya."))), /*#__PURE__*/React.createElement("div", {
+      }, "Seluruh peserta lintas kelas beserta capaian pembelajarannya.")), /*#__PURE__*/React.createElement("div", {
+        className: "actions"
+      }, /*#__PURE__*/React.createElement(Btn, {
+        size: "sm",
+        icon: "download",
+        onClick: () => exportCSV("peserta-lintas-kelas.csv", [
+          { key: "nip", label: "NIP", get: r => r.e.nip || "" },
+          { key: "name", label: "Nama", get: r => r.e.name || "" },
+          { key: "email", label: "Email", get: r => r.e.email || "" },
+          { key: "unit", label: "Unit", get: r => r.e.unit || "" },
+          { key: "class", label: "Kelas", get: r => r.klass.name || "" },
+          { key: "att", label: "Attendance", get: r => (r.att || {}).status || "belum absen" },
+          { key: "pre", label: "Pre-Test", get: r => r.pre ? r.pre.score : "" },
+          { key: "post", label: "Post-Test", get: r => r.post ? r.post.score : "" },
+          { key: "journey", label: "Progress", get: r => `${r.jp.done}/8` }
+        ], data, toast)
+      }, "Export CSV"))), /*#__PURE__*/React.createElement("div", {
         className: "filterbar"
       }, /*#__PURE__*/React.createElement(Field, {
         label: "Cari peserta"
@@ -14038,12 +14580,76 @@
 
     /* --------------------------------------------------------------- settings */
     /* --------------------------------------------------------- manage accounts */
+    function AdminMassDelete() {
+      const { user, refresh } = useApp();
+      const toast = useToast();
+      const [cat, setCat] = useState("audit_log");
+      const [confirmDelete, setConfirmDelete] = useState(false);
+
+      const OPTIONS = [
+        { value: "audit_log", label: "Log Audit / Riwayat Aktivitas", table: "audit_log" },
+        { value: "attendance", label: "Data Absensi", table: "attendance" },
+        { value: "assessment_answers", label: "Jawaban Assessment (Kuis)", table: "assessment_answers" },
+        { value: "submissions", label: "Data Submissions", table: "submissions" },
+        { value: "class_participants", label: "Pendaftaran Kelas", table: "class_participants" }
+      ];
+
+      const selOpt = OPTIONS.find(o => o.value === cat);
+      const count = db.list(selOpt.table).length;
+
+      const doDelete = () => {
+        const rows = db.list(selOpt.table);
+        rows.forEach(r => db.remove(selOpt.table, r.id));
+
+        svc.audit(user.employee_id, "mass_delete", `Menghapus massal data ${selOpt.label} (${rows.length} baris)`);
+        toast(`${rows.length} baris data ${selOpt.label} berhasil dihapus.`);
+        setConfirmDelete(false);
+        refresh();
+      };
+
+      return /*#__PURE__*/React.createElement("div", { className: "content" },
+        /*#__PURE__*/React.createElement("div", { className: "pagehead" },
+          /*#__PURE__*/React.createElement("div", null,
+            /*#__PURE__*/React.createElement("h1", null, "Hapus Data Masal"),
+            /*#__PURE__*/React.createElement("div", { className: "desc" }, "Hapus data secara masif berdasarkan kategori tertentu."))),
+        /*#__PURE__*/React.createElement("div", { className: "grid g2" },
+          /*#__PURE__*/React.createElement(Card, { title: "Pilih Kategori Data", icon: "trash" },
+            /*#__PURE__*/React.createElement("div", { className: "col", style: { gap: 14 } },
+              /*#__PURE__*/React.createElement(Field, { label: "Kategori Data" },
+                /*#__PURE__*/React.createElement(Select, {
+        value: cat, onChange: e => setCat(e.target.value),
+        options: OPTIONS
+      })),
+              /*#__PURE__*/React.createElement("div", { className: "row", style: { padding: "12px", background: "var(--surface-3)", borderRadius: "var(--r-md)" } },
+                /*#__PURE__*/React.createElement(Icon, { name: "info", size: 20, style: { color: "var(--info-ink)" } }),
+                /*#__PURE__*/React.createElement("div", null,
+                  /*#__PURE__*/React.createElement("div", { style: { fontWeight: 600 } }, "Total data saat ini"),
+                  /*#__PURE__*/React.createElement("div", { className: "num", style: { fontSize: 24 } }, count))),
+              /*#__PURE__*/React.createElement("div", { style: { marginTop: 10 } },
+                /*#__PURE__*/React.createElement(Btn, {
+        kind: "danger", icon: "trash", block: true, disabled: count === 0,
+        onClick: () => setConfirmDelete(true)
+      }, `Hapus ${count} Data`))))),
+        confirmDelete && /*#__PURE__*/React.createElement(Modal, {
+          title: "Konfirmasi Hapus Masal",
+          sub: "Tindakan ini permanen dan tidak dapat dibatalkan.",
+          onClose: () => setConfirmDelete(false),
+          footer: /*#__PURE__*/React.createElement(React.Fragment, null,
+            /*#__PURE__*/React.createElement(Btn, { onClick: () => setConfirmDelete(false) }, "Batal"),
+            /*#__PURE__*/React.createElement(Btn, { kind: "danger", icon: "alert", onClick: doDelete }, "Ya, hapus permanen"))
+        },
+          /*#__PURE__*/React.createElement("p", { style: { fontSize: 14, lineHeight: 1.7 } },
+          "Anda yakin ingin menghapus ", /*#__PURE__*/React.createElement("b", null, count, " baris"), " dari tabel ", /*#__PURE__*/React.createElement("b", null, selOpt.label), "?"
+        )));
+    }
+
     function ManageAccounts() {
       const { user, refresh } = useApp();
       const toast = useToast();
       const [q, setQ] = useState("");
       const [roleF, setRoleF] = useState("all");
       const [showAdd, setShowAdd] = useState(false);
+      const [showImport, setShowImport] = useState(false);
       const [editU, setEditU] = useState(null);
       const [delU, setDelU] = useState(null);
       const roles = db.list("roles");
@@ -14071,6 +14677,18 @@
         /*#__PURE__*/React.createElement("h1", null, "Kelola Akun"),
         /*#__PURE__*/React.createElement("div", { className: "desc" }, "Tambah, edit, atau hapus akun pengguna platform.")),
       /*#__PURE__*/React.createElement("div", { className: "actions" },
+        /*#__PURE__*/React.createElement(Btn, {
+        size: "sm", icon: "download",
+        onClick: () => exportCSV("akun-pengguna.csv", [
+          { key: "name", label: "Nama" },
+          { key: "email", label: "Email" },
+          { key: "role", label: "Role", get: u => (db.get("roles", u.role) || {}).name || u.role },
+          { key: "nip", label: "NIP", get: u => (svc.employee(u.employee_id) || {}).nip || "" },
+          { key: "unit", label: "Unit", get: u => (svc.employee(u.employee_id) || {}).unit || "" },
+          { key: "position", label: "Jabatan", get: u => (svc.employee(u.employee_id) || {}).position || "" }
+        ], users, toast)
+      }, "Export CSV"),
+        /*#__PURE__*/React.createElement(Btn, { size: "sm", icon: "upload", onClick: () => setShowImport(true) }, "Import CSV"),
         /*#__PURE__*/React.createElement(Btn, { kind: "primary", icon: "plus", onClick: () => setShowAdd(true) }, "Tambah Akun"))),
     /*#__PURE__*/React.createElement("div", { className: "filterbar" },
       /*#__PURE__*/React.createElement(Field, { label: "Cari" },
@@ -14114,6 +14732,7 @@
                     /*#__PURE__*/React.createElement(Btn, { size: "xs", kind: "ghost", icon: "trash", onClick: () => setDelU(u), style: { color: "var(--crit-ink)" } }, "Hapus"))));
         }))))),
         showAdd && /*#__PURE__*/React.createElement(NewAccountModal, { onClose: () => { setShowAdd(false); refresh(); } }),
+        showImport && /*#__PURE__*/React.createElement(ImportUsersModal, { onClose: () => { setShowImport(false); refresh(); } }),
         editU && /*#__PURE__*/React.createElement(EditAccountModal, { u: editU, onClose: () => { setEditU(null); refresh(); } }),
         delU && /*#__PURE__*/React.createElement(Modal, {
           title: "Hapus Akun", sub: "Tindakan ini tidak dapat dibatalkan", onClose: () => setDelU(null),
@@ -16217,9 +16836,9 @@
         className: "wizfoot"
       }, /*#__PURE__*/React.createElement(Btn, {
         size: "sm",
-        icon: "download",
+        icon: "play",
         onClick: () => setShowFiles(true)
-      }, "Materi & berkas (", db.files(b.module.id).length, ")"), /*#__PURE__*/React.createElement("div", {
+      }, "Putar materi & berkas (", db.files(b.module.id).length, ")"), /*#__PURE__*/React.createElement("div", {
         style: {
           flex: 1
         }
@@ -16236,8 +16855,8 @@
         onClick: complete
       }, "Tandai section selesai"))), showFiles && /*#__PURE__*/React.createElement(Modal, {
         title: "Materi & Berkas Modul",
-        sub: "Tersimpan di Google Drive akademi",
-        size: "wide",
+        sub: "Putar atau baca langsung di sini — video, audio, PDF, presentasi, dan gambar",
+        size: "full",
         onClose: () => setShowFiles(false),
         footer: /*#__PURE__*/React.createElement(Btn, {
           kind: "primary",
@@ -17110,6 +17729,10 @@
       "a-accounts": {
         crumb: ["Academy", "Sistem", "Kelola Akun"],
         el: () => /*#__PURE__*/React.createElement(ManageAccounts, null)
+      },
+      "a-mass-delete": {
+        crumb: ["Academy", "Sistem", "Hapus Data Masal"],
+        el: () => /*#__PURE__*/React.createElement(AdminMassDelete, null)
       },
       "a-monitor": {
         crumb: ["Academy", "Learning", "Monitor Kelas"],
